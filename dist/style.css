@@ -7,7 +7,7 @@ body {
   align-items: center;
   background-color: #a94064;
   background-size: cover;
-background-image: url(./hart.avif);
+ background-image: url(./img/bc.avif);
   font-family: "Mochiy Pop P One", sans-serif;
 }
 
@@ -26,7 +26,8 @@ input#open {
 
 .card-front {
   position: relative;
-  background-color: #fff0f3;
+  background-color: #ffffff;
+  background-image: url(./img/wefiesta-confetti-hartjes-rood-groot-14-gram.jpg);
   width: 300px;
   height: 300px;
   transform-origin: left;
@@ -40,9 +41,10 @@ input#open {
   position: absolute;
   width: 280px;
   height: 280px;
-  background-color: #fc8eabdc;
+  background-color: #fc8eab;
   top: 10px;
   left: 10px;
+  
 }
 
 .card-inside {
@@ -55,6 +57,7 @@ input#open {
   top: 0;
   box-shadow: inset 100px 20px 100px rgba(0, 0, 0, 0.22),
     100px 20px 100px rgba(0, 0, 0, 0.1);
+    
 }
 
 .open {
@@ -66,12 +69,15 @@ input#open {
   background-color: transparent;
   z-index: 6;
   cursor: pointer;
+  
+  
 }
 
 #open:checked ~ .card-front {
   transform: rotateY(-155deg);
   box-shadow: inset 100px 20px 100px rgba(0, 0, 0, 0.13),
     30px 0 50px rgba(0, 0, 0, 0.1);
+    
 }
 
 #open:checked ~ .card-front:before {
@@ -89,7 +95,8 @@ input#open {
   position: relative;
   width: 200px;
   height: 150px;
-  background-color: #fff0f3;
+  background-color: #fefefe;
+  border-color: #333;
   top: 75px;
   left: 50px;
   color: #333;
@@ -97,8 +104,26 @@ input#open {
   display: flex;
   align-items: center;
   text-align: center;
+  justify-items: center;
   filter: drop-shadow(0 0 20px rgba(0, 0, 0, 0.3));
+  
 }
+
+.clickhere {
+color: #333;
+
+width: 100%;
+
+}
+
+button{
+  background-color: transparent;
+  border: none;
+  font-family: "Mochiy Pop P One", sans-serif;
+  text-align: center;
+
+}
+
 
 .note:before,
 .note:after {
@@ -140,7 +165,7 @@ input#open {
 }
 
 .text-one:before {
-  content: "Valentine's";
+  content: "Valentijns";
   top: 30px;
   color: #dd7474;
 }
@@ -149,7 +174,7 @@ input#open {
 
 
 .text-one:after {
-  content: "day!";
+  content: "Dag!";
   top: 60px;
 }
 

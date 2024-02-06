@@ -8,15 +8,16 @@
 </head>
 <body>
 
-<div class="valentines-day-card">
+<div onclick="playAudio()" class="valentines-day-card">
   <input id="open" type="checkbox">
   <label class="open" for="open"></label>
 <div class="card-front">
-  <div class="note">Click to Open</div>
+  <div class="note">  <div class="clickhere"> Klik Hier</div> </div>
+  
 </div>
   
   <div class="card-inside">
-    <div class="text-one">Happy
+    <div class="text-one">Fijne
     </div>
     <div class="text-two"></div>
     <div class="heart"></div>
@@ -25,9 +26,21 @@
 </div>
 </div>
 
-<!-- <audio autoplay>
-  <source src="/dist/Josh Hutcherson Whistle (320 kbps).mp3" type="audio/mpeg">
-</audio> -->
+<script defer>
+  var audio = new Audio('Josh Hutcherson Whistle (320 kbps).mp3');
+  var isPlaying = false;
+  function playAudio(){
+    isPlaying ? audio.pause() : audio.play();
+  }
+  
+
+audio.onplaying = function() {
+  isPlaying = true;
+};
+audio.onpause = function() {
+  isPlaying = false;
+};
+</script>
 
   
 </body>
