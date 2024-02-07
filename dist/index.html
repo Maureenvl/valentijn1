@@ -1,55 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Valentijn</title>
-  <link rel="stylesheet" href="./style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- protest riot font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap"
+      rel="stylesheet"
+    />
+    <!-- einde font -->
 
-</head>
-<body>
 
-<div onclick="playAudio()" class="valentines-day-card">
-  <input id="open" type="checkbox">
-  <label class="open" for="open"></label>
-<div class="card-front">
-  <div class="note">  <div class="clickhere"> Klik Hier</div> </div>
-  
-</div>
-  
-  <div class="card-inside">
-    <div class="text-one">Fijne
+    <title>Valentijn</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div onclick="playAudio()" class="valentines-day-card">
+      <input id="open" type="checkbox" />
+      <label class="open" for="open"></label>
+      <div class="card-front">
+        <div class="note"><div class="clickhere">Klik Hier</div></div>
+      </div>
+
+      <div class="card-inside">
+        <div class="text-one">Fijne</div>
+        <div class="text-two"></div>
+        <div class="heart"></div>
+        <div class="smile"></div>
+        <div class="eyes"></div>
+      </div>
     </div>
-    <div class="text-two"></div>
-    <div class="heart"></div>
-    <div class="smile"></div>
-    <div class="eyes"></div>
-</div>
-</div>
 
-<script defer>
-  var audio = new Audio('./mp3/Bankzitters - Cupido(1).mp3');
-  var isPlaying = false;
-  function playAudio(){
-    isPlaying ? audio.pause() : audio.play();
-  }
-  
+    <script defer>
+      var audio = new Audio(
+        "./mp3/Keyshia Cole - Love (Lyrics).mp3"
+      );
+      var isPlaying = false;
+      function playAudio() {
+        isPlaying ? audio.pause() : audio.play();
+      }
 
-audio.onplaying = function() {
-  isPlaying = true;
-};
-audio.onpause = function() {
-  isPlaying = false;
-};
-</script>
-
-  
-</body>
+      audio.onplaying = function () {
+        isPlaying = true;
+      };
+      audio.onpause = function () {
+        isPlaying = false;
+      };
+    </script>
+  </body>
 </html>
-
-
-
 
 <!-- hier kan je je nummers copy pasten want de namen zijn moker lang -->
 
@@ -63,7 +65,6 @@ audio.onpause = function() {
 <!-- Bankzitters - Cupido(1).mp3 -->
 <!-- Thomas Tijs 'Noe bin ik d'r an'.mp3 -->
 
-
 <!-- Nummers met plaatje op volgorde -->
 
 <!-- Natasha Bedingfield - Unwritten (Lyrics) (320 kbps).mp3   samen met Bram en Mau foto  -->
@@ -73,4 +74,3 @@ audio.onpause = function() {
 <!-- Thomas Tijs 'Noe bin ik d'r an'.mp3  MET  plaatje tomas2 -->
 <!-- tijs-jan.png met een van de bankzitters nummers ik zou zelf cupido doen aangezien het voor een valentijns
 opdracht is maar kijk maar wat jullie willen -->
-
