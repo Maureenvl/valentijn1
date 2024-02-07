@@ -9,7 +9,7 @@ body {
   background-size: cover;
   font-family: "Mochiy Pop P One", sans-serif;
   /* achtergrond pagina */
-  background-image: url(./img/bc.avif);
+  background-image: url(./img/hart.avif);
   /* einde achtergrond pagina */
 }
 
@@ -29,13 +29,14 @@ input#open {
 .card-front {
   position: relative;
   background-color: #ffffff;
-  background-image: url(./img/wefiesta-confetti-hartjes-rood-groot-14-gram.jpg);
+  /* background-image: url(./img/wefiesta-confetti-hartjes-rood-groot-14-gram.jpg); */
   width: 300px;
   height: 300px;
   transform-origin: left;
-  box-shadow: inset 100px 20px 100px rgba(0, 0, 0, 0.15),
-    30px 0 50px rgba(0, 0, 0, 0.3);
+  /* box-shadow: inset 100px 20px 100px rgba(0, 0, 0, 0.15),
+    30px 0 50px rgba(0, 0, 0, 0.3) border transparent; */
   transition: 0.3s;
+  border-radius: 10px;
 }
 
 .card-front:before {
@@ -43,9 +44,11 @@ input#open {
   position: absolute;
   width: 280px;
   height: 280px;
-  background-color: #fc8eab;
+  background-color: #f1a6ba;
   top: 10px;
   left: 10px;
+  border-radius: 10px;
+
 }
 
 .card-inside {
@@ -58,6 +61,8 @@ input#open {
   top: 0;
   box-shadow: inset 100px 20px 100px rgba(0, 0, 0, 0.22),
     100px 20px 100px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+
 }
 
 .open {
@@ -88,7 +93,7 @@ input#open {
     30px 0 50px rgba(0, 0, 0, 0.1);
 
   /* pas hier je binnekant van je kaart aan (plaatje)  */
-  background-image: url(./img2/marty.jpeg);
+  background-image: url(./img2/tijs-jan.png);
   /* background-image: url(img2/1.webp); */
   background-size: cover;
 }
