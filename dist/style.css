@@ -7,8 +7,10 @@ body {
   align-items: center;
   background-color: #a94064;
   background-size: cover;
- background-image: url(./img/bc.avif);
   font-family: "Mochiy Pop P One", sans-serif;
+  /* achtergrond pagina */
+  background-image: url(./img/bc.avif);
+  /* einde achtergrond pagina */
 }
 
 input#open {
@@ -44,7 +46,6 @@ input#open {
   background-color: #fc8eab;
   top: 10px;
   left: 10px;
-  
 }
 
 .card-inside {
@@ -57,7 +58,6 @@ input#open {
   top: 0;
   box-shadow: inset 100px 20px 100px rgba(0, 0, 0, 0.22),
     100px 20px 100px rgba(0, 0, 0, 0.1);
-    
 }
 
 .open {
@@ -69,15 +69,12 @@ input#open {
   background-color: transparent;
   z-index: 6;
   cursor: pointer;
-  
-  
 }
 
 #open:checked ~ .card-front {
   transform: rotateY(-155deg);
   box-shadow: inset 100px 20px 100px rgba(0, 0, 0, 0.13),
     30px 0 50px rgba(0, 0, 0, 0.1);
-    
 }
 
 #open:checked ~ .card-front:before {
@@ -89,6 +86,11 @@ input#open {
   left: 0;
   box-shadow: inset 100px 20px 100px rgba(0, 0, 0, 0.1),
     30px 0 50px rgba(0, 0, 0, 0.1);
+
+  /* pas hier je binnekant van je kaart aan (plaatje)  */
+  background-image: url(./img2/bram-mau.jpg);
+  /* background-image: url(img2/1.webp); */
+  background-size: cover;
 }
 
 .note {
@@ -106,24 +108,20 @@ input#open {
   text-align: center;
   justify-items: center;
   filter: drop-shadow(0 0 20px rgba(0, 0, 0, 0.3));
-  
 }
 
 .clickhere {
-color: #333;
+  color: #333;
 
-width: 100%;
-
+  width: 100%;
 }
 
-button{
+button {
   background-color: transparent;
   border: none;
   font-family: "Mochiy Pop P One", sans-serif;
   text-align: center;
-
 }
-
 
 .note:before,
 .note:after {
@@ -169,9 +167,6 @@ button{
   top: 30px;
   color: #dd7474;
 }
-
-
-
 
 .text-one:after {
   content: "Dag!";
